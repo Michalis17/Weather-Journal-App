@@ -5,69 +5,30 @@ body {
 
 #app {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    height: 100vh;
+    height: 100%;
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
+    padding: 12px;
+    width: 100%;
 }
 
 
 .headline {
-    width: 25%;
+    width: 150px;
     background: burlywood;
-    height: 200px;
     border-radius: 100%;
     display: flex;
     align-items: center;
     padding: 12px;
     text-align: center;
+    font-size: larger;
+    aspect-ratio: 1;
 }
 
-form {
-    grid-area: form;
+.main {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.zip {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.feel {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-.entry {
-    grid-area: entry;
-    display: flex;
-    justify-content: center;
-}
-
-#entryHolder {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-label {
-    font-size: 27px;
-}
-
-input {
-    font-family: 'Oswald', sans-serif;
-}
-
-button {
-    background: #3b4a6b;
-    color: #f0d43a;
-    font-size: 26px;
-    font-family: 'Oswald', sans-serif;
+    flex-direction: row;
+    width: 100%;
 }
