@@ -14,14 +14,15 @@
 <body>
   <div id="app">
     <div class="main">
+
     <h1 class="headline">
       Weather Journal App
     </h1>
     <form id="myForm">
       <div class="zip">
-        <label for="zip">Enter Zipcode here</label>
+        <label for="zip">Enter your City</label>
         <div class="input-group mb-3">
-          <span class="input-group-text">ZIP Code:</span>
+          <span class="input-group-text">City</span>
           <input type="text" id="zip" class="form-control" required>
         </div>
       </div>
@@ -29,7 +30,7 @@
         <label for="feelings">How are you feeling today?</label>
         <div class="input-group">
           <span class="input-group-text">Enter your feelings:</span>
-          <textarea class="myInput form-control" id="feelings" rows="2" cols="50" required></textarea>
+          <textarea class="myInput form-control" id="feelings" rows="5" cols="100" required></textarea>
         </div>
         <button id="generate" type="submit" class="btn btn-primary" data-bs-toggle="collapse"
           data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
@@ -37,12 +38,13 @@
         </button>
       </div>
     </form>
+
   </div>
     
     <!-- collapse the entry to the right -->
     <div class="entry">
       <div class="collapse collapse-horizontal" id="collapseWidthExample">
-        <div class="card card-body">
+        <div class="card card-body results">
           <div>
             <div class="title">Most Recent Entry</div>
             <div id="entryHolder">
@@ -56,9 +58,9 @@
     </div>
 
     <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
   Launch demo modal
-</button>
+</button> -->
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
